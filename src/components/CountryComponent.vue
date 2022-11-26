@@ -8,7 +8,8 @@ export default {
     "currency",
     "region",
     "code",
-    //TODO: crear una propiedad para determinar si al componente se le puede hacer clic
+    //TEDO: crear una propiedad para determinar si al componente se le puede hacer clic
+    "clickable",
   ],
 };
 </script>
@@ -18,11 +19,16 @@ export default {
   Mira las rutas para ver como redirigir al usuario.-->
   <div
   >
-  <!--TODO: Poblar el HTML con las propiedades. Usar https://countryflagsapi.com/png/${code}-->
+  <!--TEDO: Poblar el HTML con las propiedades. Usar https://countryflagsapi.com/png/${code}-->
   <img
       width="200"
       height="200"
+      src:=https://countryflagsapi.com/png/${code}/
     />
+    <h1>{{ name }}</h1>
+    <h2>Capital: {{ capital }}</h2>
+    <h3>Moneda: {{ currency_name }}({{ currency }})</h3>
+    <h3>Región: {{ region }}</h3>
   </div>
 </template>
 

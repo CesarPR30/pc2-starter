@@ -18,8 +18,13 @@ export default {
   },
   methods: {
     filtrarPais(e) {
-      // TODO: Implementar. filtra el país de acuerdo al valor del input. Hint: Recuerda la función filter
+      // TEDO: Implementar. filtra el país de acuerdo al valor del input. Hint: Recuerda la función filter
       const filtro = e.target.value;
+      console.log(countries);
+      this.countries = countries.filter((pais) =>
+        pais.name.toLowerCase().includes(filtro.toLowerCase())  
+      );
+      console.log(countries);
     },
   },
 };

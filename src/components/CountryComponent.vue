@@ -17,13 +17,12 @@ export default {
 <template>
   <!--TODO: Utilizar la propiedad creada para controlar el click. Cuando el componente es "clickeable", redirigir a la pagina del pais.
   Mira las rutas para ver como redirigir al usuario.-->
-  <div
-  >
+  <div class="country">
   <!--TEDO: Poblar el HTML con las propiedades. Usar https://countryflagsapi.com/png/${code}-->
   <img
       width="200"
       height="200"
-      src:=https://countryflagsapi.com/png/${code}/
+      :src="`https://countryflagsapi.com/png/${code}`"
     />
     <h1>{{ name }}</h1>
     <h2>Capital: {{ capital }}</h2>

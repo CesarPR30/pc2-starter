@@ -8,7 +8,7 @@ export default {
     "currency",
     "region",
     "code",
-    //TODO: crear una propiedad para determinar si al componente se le puede hacer click
+    //TODO: crear una propiedad para determinar si al componente se le puede hacer clic
   ],
 };
 </script>
